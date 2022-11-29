@@ -2,10 +2,10 @@
 
 /**
   * main - print alphabets
-  * return: always 0 (sucess)
+  * Return: always 0 (sucess)
   */
 
-int main (void)
+int main(void)
 {
 	char alpha = 'a';
 	char ALPHA = 'A';
