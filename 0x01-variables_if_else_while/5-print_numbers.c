@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- *main - print 0123456789
- *Return: Always 0 (Success)
- */
+  * main - print all single digits of base 10
+  * Return: Always 0 Sucess
+  */
 
 int main(void)
 {
@@ -11,10 +11,8 @@ int main(void)
 
 	while (n < 10)
 	{
-		printf("%i", n);
+		printf("%i\n", n);
 		n++;
 	}
-	putchar('\n');
-
 	return (0);
 }
