@@ -35,7 +35,7 @@ int main(void)
 				oo++;
 				}
 
-			oo == '0';
+			oo = '0';
 			tt++;
 			}
 
