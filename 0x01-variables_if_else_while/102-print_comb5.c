@@ -12,13 +12,13 @@ int main(void)
 	tens = '0';
 	while (tens <= '9')
 	{
-		ones = tens;
+		ones = '0';
 		while (ones <= '9')
 		{
 			tt = '0';
 			while (tt <= '9')
 			{
-				oo = tt;
+				oo = '0';
 				while (oo <= '9')
 				{
 					putchar(tens);
@@ -26,7 +26,6 @@ int main(void)
 					putchar(' ');
 					putchar(tt);
 					putchar(oo);
-
 					if (!((tens == '9' && ones == '8') && (tt == '9' && oo == '9')))
 					{
 						putchar(',');
@@ -34,18 +33,12 @@ int main(void)
 					}
 				oo++;
 				}
-
-			oo = '0';
 			tt++;
 			}
-
 		ones++;
 		}
-
 	tens++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
