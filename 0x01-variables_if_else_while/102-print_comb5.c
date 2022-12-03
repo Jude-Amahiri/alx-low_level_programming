@@ -12,13 +12,13 @@ int main(void)
 	tens = '0';
 	while (tens <= '9')
 	{
-		ones = '0';
+		ones = tens;
 		while (ones <= '9')
 		{
-			tt = tens + 1;
+			tt = '0';
 			while (tt <= '9')
 			{
-				oo = ones + 1;
+				oo = tt;
 				while (oo <= '9')
 				{
 					putchar(tens);
