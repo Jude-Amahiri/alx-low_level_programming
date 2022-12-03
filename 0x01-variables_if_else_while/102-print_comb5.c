@@ -15,7 +15,7 @@ int main(void)
 		ones = '0';
 		while (ones <= '9')
 		{
-			tt = tens;
+			tt = tens + 1;
 			while (tt <= '9')
 			{
 				oo = ones + 1;
