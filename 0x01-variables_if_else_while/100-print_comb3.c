@@ -1,8 +1,9 @@
 #include <stdio.h>
 
-/* Main: print 0-99
- * Return: Sucess
-*/
+/**
+  * main - print 0-99
+  * Return: Sucess
+ */
 
 int main(void)
 {
@@ -15,13 +16,13 @@ int main(void)
 		{
 			putchar(tens);
 			putchar(ones);
-			
+
 			if (tens != '8' || ones != '9')
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			
+
 			ones++;
 		}
 
