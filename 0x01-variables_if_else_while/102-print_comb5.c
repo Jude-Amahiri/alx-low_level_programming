@@ -20,18 +20,18 @@ int main(void)
 			putchar(' ');
 			putchar((num2 / 10) + '0');
 			putchar((num2 % 10) + '0');
-				
+
 			if ((num1 != 98) || (num2 != 99))
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			{
+				putchar(',');
+				putchar(' ');
+			}
 			num2++;
 		}
-		
+
 		num1++;
 	}
-	
+
 	putchar('\n');
 	return (0);
 }
