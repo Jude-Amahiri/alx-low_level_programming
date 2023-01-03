@@ -7,38 +7,31 @@
 
 int main(void)
 {
-	int tens, ones, tt, oo;
+	int num1, num2;
 
-	tens = '0';
-	while (tens <= '9')
+	num1 = '0';
+	while (num1 <= 98)
 	{
-		ones = '0';
-		while (ones <= '9')
+		num2 = num1 + 1;
+		while (num2 <= 99)
 		{
-			tt = '0';
-			while (tt <= '9')
-			{
-				oo = '0';
-				while (oo <= '9')
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
+				
+			if ((num1 != 98) || (num2 != 99))
 				{
-					putchar(tens);
-					putchar(ones);
+					putchar(',');
 					putchar(' ');
-					putchar(tt);
-					putchar(oo);
-					if (!((tens == '9' && ones == '8') && (tt == '9' && oo == '9')))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				oo++;
 				}
-			tt++;
-			}
-		ones++;
+			num2++;
 		}
-	tens++;
+		
+		num1++;
 	}
+	
 	putchar('\n');
 	return (0);
 }

@@ -8,7 +8,7 @@
 int main(void)
 {
 	int n = '0';
-	int a_to_f = 'a';
+	int hex = 'a';
 
 	while (n <= '9') /*print 0-9*/
 	{
@@ -16,10 +16,10 @@ int main(void)
 		n++;
 	}
 
-	while (a_to_f <= 'f') /*print a-f to finish hexbase*/
+	while (hex <= 'f') /*print a-f to finish hexbase*/
 	{
-		putchar(a_to_f);
-		a_to_f++;
+		putchar(hex);
+		hex++;
 	}
 
 	putchar('\n');
