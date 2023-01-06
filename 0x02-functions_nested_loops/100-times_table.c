@@ -15,11 +15,11 @@ void print_times_table(int n)
 	{
 		row = 0;
 
-		while (row <= n;)
+		while (row <= n)
 		{
 			column = 0;
 
-			while (column <= n;)
+			while (column <= n)
 			{
 				product = (row * column);
 				if (column == 0)
