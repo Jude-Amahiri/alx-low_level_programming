@@ -1,27 +1,25 @@
-#include <main.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 
 /**
- * positive_or_negative - Checks for direction
- * @i: Digit in question
- * Return: Always 0 (Success)
+ * positive_or_negative - checks for the direction of a number
+ * @i: digit in question
+ * Returns (0) always sucess
  */
 
 void positive_or_negative(int i)
 {
-
-	srand(time(0));
-	i = rand() - RAND_MAX / 2;
-
 	if (i > 0)
 	{
-		printf("%i is positive\i", i);
+		printf("%d is positive\n", i);
 	}
 	else if (i == 0)
 	{
-		printf("%i is zero\i", i);
+		printf("%d is zero\n", i);
 	}
 	else if (i < 0)
 	{
-		printf("%i is negative\i", i);
+		printf("%d is negative\n", i);
 	}
 }
