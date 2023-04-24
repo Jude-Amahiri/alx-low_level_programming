@@ -2,7 +2,8 @@
 
 /**
  * mul - checks for a digit 0 through 9
- * @c: digit to be checked
+ * @a: digit to be multipled with
+ * @b: digit to be multiplied
  * Return: 1 if true, 0 if false
  */
 
