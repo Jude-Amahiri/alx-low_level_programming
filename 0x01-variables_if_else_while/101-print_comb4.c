@@ -7,36 +7,31 @@
 
 int main(void)
 {
-	int hundreds = '0', tens, ones;
+    int i = 0;
 
-	while (hundreds <= '9')
-	{
-		tens = hundreds + 1;
-		while (tens <= '9')
-		{
-			ones = tens + 1;
-			while (ones <= '9')
-			{
-			putchar(hundreds);
-			putchar(tens);
-			putchar(ones);
+    while (i < 1000)
+    {
+        int a = i / 100;
+        int b = (i / 10) % 10;
+        int c = i % 10;
 
-			if (hundreds != '7')
-			{
-				putchar(',');
-				putchar(' ');
-			}
+        if (a != b && a != c && b != c && b > a && c > b)
+        {
+            putchar(a + '0');
+            putchar(b + '0');
+            putchar(c + '0');
 
-			ones++;
-			}
+            if (i < 789)
+            {
+                putchar(',');
+                putchar(' ');
+            }
+        }
 
-		tens++;
-		}
+        i++;
+    }
 
-	hundreds++;
-	}
+    putchar('\n');
 
-	putchar('\n');
-
-	return (0);
+    return 0;
 }
