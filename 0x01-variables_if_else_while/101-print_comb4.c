@@ -17,9 +17,10 @@ int main(void)
 
 		if (a != b && a != c && b != c && b > a && c > b)
 		{
-		putchar(a + '0');
-		putchar(b + '0');
-		putchar(c + '0');
+			putchar(a + '0');
+			putchar(b + '0');
+			putchar(c + '0');
+		}
 
 		if (i < 789)
 		{
@@ -27,7 +28,7 @@ int main(void)
 			putchar(' ');
 		}
 		i++;
-		}
+	}
 
 	putchar('\n');
 
