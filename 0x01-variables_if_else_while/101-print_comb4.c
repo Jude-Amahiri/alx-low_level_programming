@@ -7,7 +7,7 @@
 int main(void)
 {
 	int i = 0;
-	
+
 	while (i < 1000)
 	{
 		int a = i / 100;
