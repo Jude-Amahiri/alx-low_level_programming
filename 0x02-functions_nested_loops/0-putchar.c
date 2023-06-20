@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * main - print _putchar, followed by new line
+ * _putchar - print _putchar, followed by new line
+ * @c: character to be printed
  * Return: 0
  */
 
-int _putchar(char c)
+int _putchar(int c)
 {
 	_putchar('_');
 	_putchar('p');
