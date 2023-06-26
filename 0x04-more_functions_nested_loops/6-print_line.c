@@ -7,9 +7,9 @@
 
 void print_line(int n)
 {
-	int i = 0
+	int i = 0;
 
-	while (i < 0)
+	while (i < n)
 	{
 		if (n > 0)
 		{
