@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
-  * print_diagonal - prints the \ character diagonally
-  * @n: character to be printed
+ * print_diagonal - prints the \ character diagonally
+ * @n: number of characters to draw
  */
 
 void print_diagonal(int n)
@@ -12,20 +12,19 @@ void print_diagonal(int n)
 		int line;
 		int space;
 
-		while (line <= n)
+		for (line = 1; line <= n; line++)
 		{
-			while (space < line)
+			for (space = 1; space < line; space++)
 			{
 				_putchar(' ');
-				_putchar('\\';
-				_putchar('\n');
-
-				space++;
 			}
 
-			line++;
+			_putchar('\\');
+			_putchar('\n');
 		}
 	}
 	else
+	{
 		_putchar('\n');
+	}
 }
