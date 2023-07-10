@@ -19,7 +19,8 @@ char *string_toupper(char *s)
 	return (s);
 }
 
-/** string_toupper - another method with pointer notation
+/**
+  *string_toupper - another method with pointer notation
 *
 *char *string_toupper(char *s)
 *{
