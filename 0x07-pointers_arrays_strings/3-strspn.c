@@ -32,8 +32,8 @@ unsigned int _strspn(char *s, char *accept)
 }
 
 /**
-  * _strspn - pointer arithmetic version
-* 
+ * _strspn - pointer arithmetic version
+*
 * *unsigned int _strspn(char *s, char *accept)
 *{
 *	int i = 0, j;
