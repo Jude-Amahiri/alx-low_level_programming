@@ -21,7 +21,7 @@
 
 ---
 ### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
+Jude Amahiri Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/Jude AmahiriNg__)
 
 ### License
  [![M](https://www.holbertonschool.com/holberton-logo-simple-200s.png)](https://www.holbertonschool.com)
