@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * main - check the code for Holberton School students.
+ * main - check the code for Alx Africa students.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char s[] = "Holberton School!\n";
+	char s[] = "Alx Africa!\n";
 	char *p;
 
 	p = string_toupper(s);

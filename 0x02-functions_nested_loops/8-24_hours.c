@@ -26,3 +26,22 @@ void jack_bauer(void)
 		hours++;
 	}
 }
+
+/* void jack_bauer(void)
+{
+    int hours;
+    int minutes;
+
+    for (hours = 00; hours <= 23; hours++)
+    {
+        for (minutes = 00; minutes <= 59; minutes++)
+        {
+            putchar((hours / 10) + '0');
+            putchar((hours % 10) + '0');
+            putchar(':');
+            putchar((minutes / 10) + '0');
+            putchar((minutes % 10) + '0');
+            putchar('\n');
+        }
+    }
+} */

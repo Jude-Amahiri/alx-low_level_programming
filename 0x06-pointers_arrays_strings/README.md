@@ -44,5 +44,5 @@ This repository holds some projects I worked on for ALX School. The goal is to l
     - if size is 0 or less, the output should be a new line only \n
 
 ## Authors
-* Melissa Ng
+* Jude Amahiri
 
