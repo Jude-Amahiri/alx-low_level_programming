@@ -8,19 +8,19 @@
 int main(void)
 {
 	int sum_of_evens = 0;
-	int a;
-	int b;
+	int prev;
+	int next;
 	int sum = 1;
 
-	a = 1;
-	b = 1;
+	prev = 1;
+	next = 1;
 
-	while (b < 4000000)
+	while (next < 4000000)
 	{
-		sum = a + b;
-		a = b;
-		b = sum;
-		if ((sum <= 4000000) && (sum % 2 == 0))
+		sum = prev + next;
+		prev = next;
+		next = sum;
+		if (sum % 2 == 0)
 			sum_of_evens += sum;
 	}
 	printf("%d\n", sum_of_evens);
