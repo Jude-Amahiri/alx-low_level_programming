@@ -13,7 +13,7 @@ if [ -d ".git" ]; then
     git commit -m "$commit_message"
 
     # Push changes to the remote repository
-    git push origin master  # Modify 'master' if you're on a different branch
+    git push origin main  # Modify 'master' if you're on a different branch
 else
     echo "This directory is not a Git repository."
 fi
