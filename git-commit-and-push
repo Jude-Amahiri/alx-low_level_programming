@@ -1,18 +1,20 @@
 #!/bin/bash
 
-# Define your repository URL and branch
-repository_url="https://github.com/Jude-Amahiri/alx-low_level_programming.git"
-branch="main"
+# Check if the current directory is a Git repository
+if [ -d ".git" ]; then
+    # Add all changes to the staging area
+    git add .
 
-# Prompt for the commit message
-read -p "Enter a commit message: " commit_message
+    # Prompt for a commit message
+    echo "Enter your commit message:"
+    read commit_message
 
-# Add all changes
-git add .
+    # Commit changes with the provided message
+    git commit -m "$commit_message"
 
-# Commit with the provided message
-git commit -m "$commit_message"
-
-# Push to the remote repository
-git push origin $branch
+    # Push changes to the remote repository
+    git push origin master  # Modify 'master' if you're on a different branch
+else
+    echo "This directory is not a Git repository."
+fi
 
