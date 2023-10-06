@@ -5,7 +5,7 @@
 
 ### Description of what each file shows:
 * main_test_files ----- folder holds test files that showcase examples of how to use functions
-* holberton.h ---------- holds files' function prototypes
+* main.h ---------- holds files' function prototypes
 * Files that start with:
 0. a function that converts a binary number to an unsigned int
 1. a function that prints the binary of a number without using / or %
