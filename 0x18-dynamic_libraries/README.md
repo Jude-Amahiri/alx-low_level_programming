@@ -18,4 +18,4 @@ This repository illustrates how to create a dynamic library in Linux. To read ho
 5. 100-operations.so - created this C dynamic library to be imported into python program 100-tests.py
 
 ## Authors
-* Melissa Ng
+* Jude Ng
