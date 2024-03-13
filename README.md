@@ -14,6 +14,6 @@
 * Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
 ---
-### Authors
+### Author
 Jude Amahiri
 
