@@ -1,54 +1,56 @@
 #include "main.h"
-#include <stdio.h>
-/**
- * infinite_add - adds two numbers
- * @n1: number one.
- * @n2: number two.
- * @r: buffer that the function will use to store the result.
- * @size_r: buffer size:
- * Return: the pointer to dest.
- */
 
+/**
+ * infinite_add - Adds two numbers
+ * @n1: First number
+ * @n2: Second number
+ * @r: Buffer to store the result
+ * @size_r: Size of the buffer r
+ *
+ * Return: Pointer to the result if successful, otherwise 0
+ */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int c1 = 0, c2 = 0, op, bg, dr1, dr2, add = 0;
+	int len1 = 0, len2 = 0, sum, carry = 0;
 
-	while (*(n1 + c1) != '\0')
-		c1++;
-	while (*(n2 + c2) != '\0')
-		c2++;
-	if (c1 >= c2)
-		bg = c1;
-	else
-		bg = c2;
-	if (size_r <= bg + 1)
+	/* Calculate the lengths of n1 and n2 */
+	while (n1[len1] != '\0')
+		len1++;
+	while (n2[len2] != '\0')
+		len2++;
+
+	/* Ensure that there is enough space in the buffer */
+	if (len1 + len2 + 1 > size_r)
 		return (0);
-	r[bg + 1] = '\0';
-	c1--, c2--, size_r--;
-	dr1 = *(n1 + c1) - 48, dr2 = *(n2 + c2) - 48;
-	while (bg >= 0)
+
+	/* Perform addition from right to left */
+	r[len1 + len2] = '\0';
+	len1--;
+	len2--;
+	while (len1 >= 0 || len2 >= 0)
 	{
-		op = dr1 + dr2 + add;
-		if (op >= 10)
-			add = op / 10;
-		else
-			add = 0;
-		if (op > 0)
-		*(r + bg) = (op % 10) + 48;
-		else
-			*(r + bg) = '0';
-		if (c1 > 0)
-			c1--, dr1 = *(n1 + c1) - 48;
-		else
-			dr1 = 0;
-		if (c2 > 0)
-			c2--, dr2 = *(n2 + c2) - 48;
-		else
-			dr2 = 0;
-		bg--, size_r--;
+		sum = carry;
+		if (len1 >= 0)
+			sum += n1[len1] - '0';
+		if (len2 >= 0)
+			sum += n2[len2] - '0';
+		r[len1 + len2 + 1] = (sum % 10) + '0';
+		carry = sum / 10;
+		len1--;
+		len2--;
 	}
-	if (*(r) == '0')
-		return (r + 1);
-	else
+
+	/* Check for any remaining carry */
+	if (carry != 0)
+	{
+		/* Check if there is enough space for the carry */
+		if (len1 + len2 + 2 > size_r)
+			return (0);
+		r[0] = carry + '0';
 		return (r);
+	}
+
+	/* Return a pointer to the result */
+	return (r + 1);
 }
+
