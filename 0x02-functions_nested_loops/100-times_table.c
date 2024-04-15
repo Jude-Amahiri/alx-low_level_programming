@@ -7,17 +7,17 @@
 
 void print_times_table(int n)
 {
-	int row;
 	int column;
+	int row;
 	int product;
 
 	if (n >= 0 && n <= 15)
 	{
-		for (row = 0; row <= n; row++)
+		for (column = 0; column <= n; column++)
 		{
-			for (column = 0; column <= n; column++)
+			for (row = 0; row <= n; row++)
 			{
-				product = (row * column);
+				product = (column * row);
 				if (column == 0)
 					_putchar('0' + product);
 				else
