@@ -6,17 +6,17 @@
 
 void times_table(void)
 {
-	int row = 0;
+	int column = 0;
 
-	while (row <= 9)
+	while (column <= 9)
 	{
-		int column = 0;
+		int row = 0;
 
-		while (column <= 9)
+		while (row <= 9)
 		{
 			int product = column * row;
 
-			if (column == 0)
+			if (row == 0)
 			{
 				_putchar('0' + product);
 			}
@@ -35,10 +35,10 @@ void times_table(void)
 				_putchar('0' + (product % 10));
 			}
 
-			column++;
+			row++;
 		}
 		_putchar('\n');
 
-		row++;
+		column++;
 	}
 }
