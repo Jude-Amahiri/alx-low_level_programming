@@ -9,18 +9,18 @@ void print_triangle(int size)
 {
 	if (size > 0)
 	{
-		int tri;
+		int row;
 		int space;
 		int hash;
 
-		for (tri = 1; tri <= size; tri++)
+		for (row = 1; row <= size; row++)
 		{
-			for (space = 1; space <= (size - tri); space++)
+			for (space = 1; space <= (size - row); space++)
 			{
 				_putchar(' ');
 			}
 
-			for (hash = 1; hash <= tri; hash++)
+			for (hash = 1; hash <= row; hash++)
 			{
 				_putchar('#');
 			}
